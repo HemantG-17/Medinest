@@ -73,7 +73,10 @@ For a deeper dive into the methodology and implementation of this project, refer
 
 ---
 
-**Developed by Hemant Gupta**
 frontend:https://medinest-ecru.vercel.app/login
 backend:https://medi-nest-backend.onrender.com
+
+---
+**Developed by Hemant Gupta**
+
 
