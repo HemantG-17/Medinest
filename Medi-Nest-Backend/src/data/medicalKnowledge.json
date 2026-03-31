@@ -1,0 +1,680 @@
+[
+  {
+    "keywords": ["fever", "cough", "shortness of breath", "fatigue", "bukhaar", "khansi", "saans lene me takleef"],
+    "conditions": "Pneumonia or Bronchitis (निमोनिया / ब्रोंकाइटिस)",
+    "specialist": "Pulmonologist or General Physician (फेफड़ों का डॉक्टर / सामान्य चिकित्सक)",
+    "tips": "Rest, stay hydrated, and use a humidifier. If breathing becomes very difficult, seek emergency care. (आराम करें, पानी पीते रहें। सांस लेने में कठिनाई हो तो तुरंत डॉक्टर से मिलें।)"
+  },
+  {
+    "keywords": ["chest pain", "tightness", "sweating", "nausea", "seene me dard", "bhariapan", "pasina aana"],
+    "conditions": "Angina or Potential Heart Attack (दिल का दौरा / एनजाइना)",
+    "specialist": "Cardiologist (Urgent) (हृदय रोग विशेषज्ञ - तत्काल)",
+    "tips": "Sit down and remain calm. Do not exert yourself. If the pain radiates to the jaw or arm, call emergency services. (शांत रहें और बिल्कुल मेहनत न करें। अगर दर्द हाथ या जबड़े तक फैले, तो तुरंत एम्बुलेंस बुलाएं।)"
+  },
+  {
+    "keywords": ["headache", "sensitivity to light", "nausea", "throbbing", "sir dard", "sirdard", "chakkar"],
+    "conditions": "Migraine (सिरदर्द / माइग्रेन)",
+    "specialist": "Neurologist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Rest in a dark, quiet room. Apply a cool compress to your forehead and stay hydrated. (अंधेरे और शांत कमरे में आराम करें। माथे पर ठंडी पट्टी रखें।)"
+  },
+  {
+    "keywords": ["frequent urination", "excessive thirst", "blurred vision", "weight loss", "baar baar peshab", "bohot pyas", "vajan kam hona"],
+    "conditions": "Diabetes Mellitus (मधुमेह / शुगर)",
+    "specialist": "Endocrinologist (मधुमेह विशेषज्ञ)",
+    "tips": "Monitor your sugar intake. Maintain a consistent meal schedule and stay active. (चीनी कम खाएं। खाने का समय निश्चित रखें और कसरत करें।)"
+  },
+  {
+    "keywords": ["wheezing", "chest tightness", "shortness of breath", "saans phoolna", "saans me ghargharahat"],
+    "conditions": "Asthma (दमा / अस्थमा)",
+    "specialist": "Pulmonologist or Allergist (फेफड़ों का डॉक्टर)",
+    "tips": "Keep your rescue inhaler nearby. Avoid known triggers like dust, pollen, or heavy smoke. (अपना इनहेलर पास रखें। धूल और धुएं से बचें।)"
+  },
+  {
+    "keywords": ["stiff neck", "high fever", "sensitivity to light", "confusion", "gardan me akad", "tez bukhar"],
+    "conditions": "Meningitis (दिमागी बुखार)",
+    "specialist": "Neurologist (Emergency) (तंत्रिका रोग विशेषज्ञ - इमरजेंसी)",
+    "tips": "This is a serious condition. Seek immediate medical evaluation at an emergency department. (यह गंभीर स्थिति है। तुरंत इमरजेंसी में जाएं।)"
+  },
+  {
+    "keywords": ["joint pain", "stiffness", "swelling", "redness", "jodo me dard", "sujan"],
+    "conditions": "Arthritis (गठिया / जोड़ों का दर्द)",
+    "specialist": "Rheumatologist (गठिया विशेषज्ञ)",
+    "tips": "Gentle stretching and warm compresses can help. Avoid high-impact activities during flare-ups. (हल्की एक्सरसाइज और गर्म सिकाई करें। ज्यादा दौड़-धूप से बचें।)"
+  },
+  {
+    "keywords": ["abdominal pain", "bloating", "diarrhea", "constipation", "pet dard", "dast", "kabz"],
+    "conditions": "Irritable Bowel Syndrome (IBS) (आईबीएस / पेट की समस्या)",
+    "specialist": "Gastroenterologist (पेट का डॉक्टर)",
+    "tips": "Identify and avoid trigger foods. Manage stress levels. (परहेज वाले खाने से बचें और तनाव कम करें।)"
+  },
+  {
+    "keywords": ["rash", "itching", "swelling", "hives", "khujli", "laal nishaan"],
+    "conditions": "Allergic Reaction (एलर्जी)",
+    "specialist": "Dermatologist or Allergist (त्वचा विशेषज्ञ)",
+    "tips": "Avoid the allergen. Over-the-counter antihistamines may help. (एलर्जी वाली चीज़ों से बचें। खुजली की दवाई लें।)"
+  },
+  {
+    "keywords": ["burning urination", "frequent urge to urinate", "cloudy urine", "peshab me jalan"],
+    "conditions": "Urinary Tract Infection (UTI) (यूरिन इन्फेक्शन)",
+    "specialist": "Urologist (मूत्र रोग विशेषज्ञ)",
+    "tips": "Drink plenty of water and cranberry juice. Avoid spicy foods. (खूब पानी पिएं। मिर्च-मसाले से बचें।)"
+  },
+  {
+    "keywords": ["back pain", "numbness", "tingling", "weakness", "peeth dard", "kamar dard"],
+    "conditions": "Sciatica or Herniated Disc (साइटिका / कमर दर्द)",
+    "specialist": "Orthopedist or Physiotherapist (हड्डियों का डॉक्टर)",
+    "tips": "Improve your posture. Use heat or ice packs. (उठने-बैठने का तरीका सुधारें। गर्म या ठंडी सिकाई करें।)"
+  },
+  {
+    "keywords": ["heartburn", "acid reflux", "chest burning", "sour taste", "jalan", "acidity"],
+    "conditions": "GERD (Gastroesophageal Reflux Disease) (एसिडिटी / जलन)",
+    "specialist": "Gastroenterologist (पेट का डॉक्टर)",
+    "tips": "Avoid large meals before bedtime. Limit spicy and acidic foods. (सोने से पहले भारी खाना न खाएं। मिर्च-मसाले कम करें।)"
+  },
+  {
+    "keywords": ["sudden numbness", "weakness on one side", "facial drooping", "slurred speech", "lakwa", "bolne me takleef"],
+    "conditions": "Stroke (Cerebrovascular Accident) (स्ट्रोक / लकवा)",
+    "specialist": "Neurologist (Emergency) (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "FAST: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services. (तुरंत एम्बुलेंस बुलाएं। यह मेडिकल इमरजेंसी है।)"
+  },
+  {
+    "keywords": ["anxiety", "rapid heartbeat", "excessive worry", "panic", "ghabrahat", "bechaini"],
+    "conditions": "Anxiety Disorder (घबराहट / चिंता)",
+    "specialist": "Psychiatrist or Psychologist (मनोचिकित्सक)",
+    "tips": "Practice deep breathing and mindfulness. Limit caffeine. (गहरी सांस लें और ध्यान लगाएं। कैफीन कम लें।)"
+  },
+  {
+    "keywords": ["persistent cough", "fever", "weight loss", "night sweats", "blood in cough", "tuberclousis", "khasi me khoon"],
+    "conditions": "Tuberculosis (TB) (तपेदिक / टीबी)",
+    "specialist": "Pulmonologist or Infectious Disease Specialist (टीबी विशेषज्ञ)",
+    "tips": "TB is curative but requires long-term medication. Wear a mask to prevent spread. (पूरा इलाज लें और मास्क पहनें ताकि दूसरों को संक्रमण न हो।)"
+  },
+  {
+    "keywords": ["high fever", "severe joint pain", "rash", "chikungunya", "jodo me bhayankar dard"],
+    "conditions": "Chikungunya (चिकुनगुनिया)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Stay hydrated. Joint pain may persist for weeks. Consult a doctor for management. (खूब पानी पिएं। जोड़ों का दर्द लंबे समय तक रह सकता है।)"
+  },
+  {
+    "keywords": ["high fever", "severe headache", "pain behind eyes", "muscle pain", "dengue", "tez bukhar aur dard"],
+    "conditions": "Dengue Fever (डेंगू बुखार)",
+    "specialist": "Infectious Disease Specialist or General Physician (डेंगू विशेषज्ञ)",
+    "tips": "Monitor platelet count daily. Drink plenty of water and papaya leaf extract. (प्लेटलेट्स चेक कराते रहें। खूब पानी पिएं।)"
+  },
+  {
+    "keywords": ["long fever", "stomach pain", "headache", "typhoid", "miyadi bukhar"],
+    "conditions": "Typhoid Fever (टाइफाइड / मियादी बुखार)",
+    "specialist": "General Physician or Gastroenterologist (टाइफाइड विशेषज्ञ)",
+    "tips": "Eat light, easily digestible food. Complete the full course of antibiotics. (हल्का खाना खाएं और एंटीबायोटिक का पूरा कोर्स लें।)"
+  },
+  {
+    "keywords": ["facial drooping", "eyelid drooping", "inability to close eye", "bells palsy"],
+    "conditions": "Bell's Palsy (बेल पाल्सी / चेहरे का लकवा)",
+    "specialist": "Neurologist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Most cases recover fully within months. Physical therapy can help muscle tone. (अक्सर कुछ महीनों में ठीक हो जाता है। फिजियोथेरेपी से मदद मिल सकती है।)"
+  },
+  {
+    "keywords": ["red patches", "silvery scales", "thick skin", "psoriasis", "khujli aur chakte"],
+    "conditions": "Psoriasis (सोरायसिस)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Keep skin moisturized. Avoid triggers like smoking and alcohol. (त्वचा को मॉइस्चराइज़ रखें। धूम्रपान और शराब से बचें।)"
+  },
+  {
+    "keywords": ["bulging neck", "weight loss", "anxiety", "increased appetite", "thyroid", "ghenga"],
+    "conditions": "Hyperthyroidism (थायराइड की अधिकता)",
+    "specialist": "Endocrinologist (थायराइड विशेषज्ञ)",
+    "tips": "Monitor heart rate and manage stress. Radioactive iodine therapy might be needed. (दिल की धड़कन चेक करें और थायराइड लेवल की जांच कराएं।)"
+  },
+  {
+    "keywords": ["weight gain", "fatigue", "dry skin", "constipation", "hypothyroid"],
+    "conditions": "Hypothyroidism (थायराइड की कमी)",
+    "specialist": "Endocrinologist (थायराइड विशेषज्ञ)",
+    "tips": "Standard treatment is synthetic thyroid hormone. Maintain a healthy diet. (थायराइड की गोली लें और वजन पर ध्यान दें।)"
+  },
+  {
+    "keywords": ["joint pain", "stiffness", "swelling", "morning rigidity", "rheumatism"],
+    "conditions": "Rheumatoid Arthritis (गठिया रोग)",
+    "specialist": "Rheumatologist (गठिया विशेषज्ञ)",
+    "tips": "Regular exercise and joint protection are key to managing severity. (नियमित एक्सरसाइज और जोड़ों की सुरक्षा जरूरी है।)"
+  },
+  {
+    "keywords": ["itchy rash", "red bumps", "small blisters", "scabies", "bhayanak khujli"],
+    "conditions": "Scabies (खाज-खुजली)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Wash all clothes and linens in hot water. Everyone in the household should be treated. (कपड़ों और बेडशीट को गर्म पानी में धोएं। घर के सभी सदस्यों का इलाज जरूरी है।)"
+  },
+  {
+    "keywords": ["red face", "visible blood vessels", "pimples", "rosacea"],
+    "conditions": "Rosacea (रोज़ेशिया)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Identify and avoid triggers like spicy foods and hot drinks. Use sun protection. (मिर्च-मसाले से बचें और सनस्क्रीन का इस्तेमाल करें।)"
+  },
+  {
+    "keywords": ["painless lumps", "night sweats", "fever", "weight loss", "lymphoma"],
+    "conditions": "Potential Lymphoma (लिम्फोमा / कैंसर का संकेत)",
+    "specialist": "Oncologist or Hematologist (कैंसर विशेषज्ञ)",
+    "tips": "See a doctor for biopsy and imaging tests if these symptoms persist. (अगर गिल्टियां दर्द न करें और बुखार रहे, तो तुरंत कैंसर विशेषज्ञ से मिलें।)"
+  },
+  {
+    "keywords": ["chest pain", "fever", "pain on deep breath", "myocarditis"],
+    "conditions": "Myocarditis (हृदय की मांसपेशियों में सूजन)",
+    "specialist": "Cardiologist (हृदय रोग विशेषज्ञ)",
+    "tips": "Avoid strenuous physical activity. Seek medical help if breathing becomes difficult. (भारी मेहनत न करें और डॉक्टर की सलाह पर ही कसरत शुरू करें।)"
+  },
+  {
+    "keywords": ["forgetfulness", "confusion", "difficulty in planning", "alzheimers", "bhoolne ki bimari"],
+    "conditions": "Alzheimer's Disease (अल्जाइमर / भूलने की बीमारी)",
+    "specialist": "Neurologist or Psychiatrist (भूलने की बीमारी का विशेषज्ञ)",
+    "tips": "Establish a consistent routine and use memory aids like calendars and lists. (निश्चित दिनचर्या बनाएं और याद दिलाने वाले यंत्रों का प्रयोग करें।)"
+  },
+  {
+    "keywords": ["mood swings", "extreme happiness", "deep sadness", "bipolar"],
+    "conditions": "Bipolar Disorder (बाइपोलर डिसऑर्डर)",
+    "specialist": "Psychiatrist or Psychologist (मनोचिकित्सक)",
+    "tips": "Maintaining a regular sleep pattern is crucial for mood stability. (मूड कंट्रोल करने के लिए पर्याप्त नींद और दवाएं जरूरी हैं।)"
+  },
+  {
+    "keywords": ["severe back pain", "blood in urine", "nausea", "pain radiating to groin", "stones", "pathri"],
+    "conditions": "Kidney Stones (गुर्दे की पथरी)",
+    "specialist": "Urologist (मूत्र रोग विशेषज्ञ)",
+    "tips": "Drink plenty of water to help pass the stone. Limit high-oxalate foods like spinach and nuts. (खूब पानी पिएं और पालक-नट्स जैसी चीज़ों से बचें।)"
+  },
+  {
+    "keywords": ["pale skin", "feeling weak", "dizziness", "fast heartbeat", "brittle nails", "khoon ki kami", "anemia"],
+    "conditions": "Anemia (Iron Deficiency) (खून की कमी / एनीमिया)",
+    "specialist": "Hematologist or General Physician (खून का डॉक्टर)",
+    "tips": "Eat iron-rich foods like spinach, red meat, and lentils. Vitamin C helps iron absorption. (आयरन वाला खाना खाएं और विटामिन सी लें।)"
+  },
+  {
+    "keywords": ["sore on penis", "burning urination", "penile discharge", "sti", "std"],
+    "conditions": "Potential STI (Sexually Transmitted Infection) (संक्रमित रोग)",
+    "specialist": "Urologist or Dermatologist (Venerologist) (गुप्त रोग विशेषज्ञ)",
+    "tips": "Avoid sexual contact until cleared by a doctor. Complete the full course of antibiotics. (डॉक्टर की सलाह तक यौन संबंध न बनाएं और पूरा कोर्स लें।)"
+  },
+  {
+    "keywords": ["bulging eyes", "weight loss", "anxiety", "graves disease", "thyroid", "bhari aankhen"],
+    "conditions": "Graves' Disease (Hyperthyroidism) (थायराइड का बढ़ा हुआ रूप)",
+    "specialist": "Endocrinologist (थायराइड विशेषज्ञ)",
+    "tips": "Protect your eyes from dry or irritated conditions. Meditation and stress management can help sync your metabolism. (आंखों को सुरक्षित रखें और तनाव कम करें।)"
+  },
+  {
+    "keywords": ["easy bruising", "fatigue", "frequent infections", "leukemia", "khoon ka cancer"],
+    "conditions": "Potential Leukemia (Blood Cancer) (खून का कैंसर संकेत)",
+    "specialist": "Hematologist-Oncologist (कैंसर विशेषज्ञ)",
+    "tips": "See a specialist for a complete blood count (CBC) test immediately if these symptoms persist. (अगर गिल्टियां दर्द न करें और बुखार रहे, तो तुरंत कैंसर विशेषज्ञ से मिलें।)"
+  },
+  {
+    "keywords": ["constant thirst", "excessive hunger", "slow healing", "type 2 diabetes", "sugar", "sugar ki bimari"],
+    "conditions": "Type 2 Diabetes (टाइप 2 मधुमेह)",
+    "specialist": "Endocrinologist (मधुमेह विशेषज्ञ)",
+    "tips": "Focus on low-carb, high-fiber nutrition. Walk for 30 minutes daily after meals. (नियमित वॉक और डाइट पर ध्यान दें।)"
+  },
+  {
+    "keywords": ["red itchy scales", "silvery patches", "dry skin", "psoriasis", "chakte", "chamdi ki bimar"],
+    "conditions": "Psoriasis (सोरायसिस)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Moisturize regularly. Avoid skin injuries and manage stress levels. (त्वचा को मॉइस्चराइज़ रखें और तनाव कम करें।)"
+  },
+  {
+    "keywords": ["pimples", "blackheads", "oily skin", "acne", "muhase"],
+    "conditions": "Acne Vulgaris (मुहासे)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Wash your face twice daily with a mild cleanser. Avoid popping pimples. (दो बार चेहरा धोएं और पिंपल्स न फोड़ें।)"
+  },
+  {
+    "keywords": ["bleeding gums", "tooth mobility", "bruising easily", "scurvy", "masudo ka rog"],
+    "conditions": "Scurvy (Vitamin C Deficiency) (स्कर्वी / विटामिन सी की कमी)",
+    "specialist": "General Physician or Nutritionist (पोषाहार विशेषज्ञ)",
+    "tips": "Increase intake of citrus fruits like lemons and oranges. (खट्टे फलों का सेवन बढ़ाएं।)"
+  },
+  {
+    "keywords": ["bowed legs", "bone pain", "delayed growth", "rickets", "haddi ka rog"],
+    "conditions": "Rickets (Vitamin D Deficiency) (सूखा रोग / रिकेट्स)",
+    "specialist": "Pediatrician or Orthopedist (हड्डियों का डॉक्टर)",
+    "tips": "Increase sun exposure and consume foods high in Vitamin D and calcium. (धूप में बैठें और विटामिन डी वाला खाना खाएं।)"
+  },
+  {
+    "keywords": ["throbbing in abdomen", "sudden back pain", "pulsating feeling", "aneurysm", "dard aur tadap"],
+    "conditions": "Abdominal Aortic Aneurysm (AAA) (महाधमनी का फैलाव)",
+    "specialist": "Vascular Surgeon (Emergency) (संवहनी सर्जन - तत्काल)",
+    "tips": "If the pain is sudden and severe, call emergency services immediately. (अचानक दर्द हो तो तुरंत अस्पताल जाएं।)"
+  },
+  {
+    "keywords": ["skipped heartbeats", "fluttering in chest", "racing pulse", "palpitations", "ghabrahat aur tez dhakan"],
+    "conditions": "Heart Palpitations (दिल की धड़कन का तेज होना)",
+    "specialist": "Cardiologist (हृदय रोग विशेषज्ञ)",
+    "tips": "Avoid caffeine and stress. Seek help if accompanied by dizziness. (चाय-कॉफी कम लें और तनाव से बचें।)"
+  },
+  {
+    "keywords": ["excessive daytime sleepiness", "sudden sleep attacks", "cataplexy", "narcolepsy", "din me nind aana"],
+    "conditions": "Narcolepsy (नार्कोलेप्सी / नींद की बीमारी)",
+    "specialist": "Sleep Specialist or Neurologist (नींद रोग विशेषज्ञ)",
+    "tips": "Maintain a strict sleep schedule and take short, scheduled naps. (सोने का समय निश्चित करें और दिन में थोड़ा सोएं।)"
+  },
+  {
+    "keywords": ["snoring", "waking up gasping", "daytime fatigue", "sleep apnea", "kharrate aur thakaan"],
+    "conditions": "Sleep Apnea (स्लीप एपनिया)",
+    "specialist": "Sleep Specialist (ENT) (नींद और नाक विशेषज्ञ)",
+    "tips": "Weight loss can significantly improve symptoms. Avoid sleeping on your back. (वजन कम करें और करवट लेकर सोएं।)"
+  },
+  {
+    "keywords": ["seizures", "convulsions", "loss of consciousness", "epilepsy", "mirgi", "dore padna"],
+    "conditions": "Epilepsy (मिर्गी)",
+    "specialist": "Neurologist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Stay consistent with anti-seizure medications. Ensure a safe environment. (नियमित दवा लें और सुरक्षित माहौल में रहें।)"
+  },
+  {
+    "keywords": ["fever", "cough", "whooping sound", "pertussis", "kali khansi"],
+    "conditions": "Whooping Cough (Pertussis) (काली खांसी)",
+    "specialist": "Pediatrician (बच्चों का डॉक्टर)",
+    "tips": "Vigilant monitoring of breathing is necessary. It's highly contagious. (सांस लेने की निगरानी रखें। यह संक्रामक है।)"
+  },
+  {
+    "keywords": ["swollen cheeks", "fever", "painful swallowing", "mumps", "kanped"],
+    "conditions": "Mumps (कनपेड़)",
+    "specialist": "Pediatrician (बच्चों का डॉक्टर)",
+    "tips": "Avoid acidic foods. Apply cool or warm compresses to the neck. (खट्टा न खाएं और गले की सिकाई करें।)"
+  },
+  {
+    "keywords": ["fever", "rash", "red eyes", "measles", "khasra"],
+    "conditions": "Measles (खसरा)",
+    "specialist": "Pediatrician (बच्चों का डॉक्टर)",
+    "tips": "Plenty of fluids and rest. Monitor for complications like ear infections. (खूब पानी पिएं और आराम करें।)"
+  },
+  {
+    "keywords": ["facial drooping", "cannot smile", "eye won't close", "bells palsy", "chehre ka lakwa"],
+    "conditions": "Bell's Palsy (चेहरे का लकवा)",
+    "specialist": "Neurologist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Keep the eye lubricated. Most recover within months. (आंखों में ड्रौप डालें। अक्सर अपने आप ठीक हो जाता है।)"
+  },
+  {
+    "keywords": ["abdominal swelling", "weight loss", "yellowing", "cirrhosis", "jigar ki bimari"],
+    "conditions": "Liver Cirrhosis (लीवर सिरोसिस)",
+    "specialist": "Hepatologist (लीवर विशेषज्ञ)",
+    "tips": "Stop alcohol consumption immediately. Maintain a low-salt diet. (शराब बिल्कुल बंद कर दें और नमक कम करें।)"
+  },
+  {
+    "keywords": ["muscle weakness", "drooping eyelids", "difficulty swallowing", "myasthenia"],
+    "conditions": "Myasthenia Gravis (मायस्थेनिया ग्रेविस)",
+    "specialist": "Neurologist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Schedule activities when strength is highest. Rest frequently. (ताकत होने पर काम करें और आराम करें।)"
+  },
+  {
+    "keywords": ["chronic fatigue", "joint pain", "anemia", "sickle cell", "khoon ki kharabi"],
+    "conditions": "Sickle Cell Anemia (सिकल सेल एनीमिया)",
+    "specialist": "Hematologist (खून का डॉक्टर)",
+    "tips": "Stay hydrated and avoid extreme temperatures. Periodic blood checks are needed. (खूब पानी पिएं और तापमान का ध्यान रखें।)"
+  },
+  {
+    "keywords": ["nosebleeds", "pale skin", "bruising", "thalassemia", "anuvanshik khoon"],
+    "conditions": "Thalassemia (थैलेसीमिया)",
+    "specialist": "Hematologist (खून का डॉक्टर)",
+    "tips": "Regular blood transfusions may be necessary. Genetic counseling is advised. (खून चढ़वाना पड़ सकता है। जेनेटिक चेकअप कराएं।)"
+  },
+  {
+    "keywords": ["persistent cough", "breathlessness", "sarcoidosis"],
+    "conditions": "Sarcoidosis (सार्कोइडोसिस)",
+    "specialist": "Pulmonologist (फेफड़ों का डॉक्टर)",
+    "tips": "Follow-up monitoring of lung function is essential. (फेफड़ों के फंक्शन की नियमित जांच कराते रहें।)"
+  },
+  {
+    "keywords": ["chronic scarring", "cough", "fatigue", "pulmonary fibrosis"],
+    "conditions": "Idiopathic Pulmonary Fibrosis (फेफड़ों का फाइब्रोसिस)",
+    "specialist": "Pulmonologist (फेफड़ों का डॉक्टर)",
+    "tips": "Oxygen therapy may be needed. Avoid smoke and triggers. (ऑक्सीजन की जरूरत हो सकती है। धुएं से बचें।)"
+  },
+  {
+    "keywords": ["muscle loss", "weakness in elderly", "sarcopenia"],
+    "conditions": "Sarcopenia (मांसपेशियों की कमी)",
+    "specialist": "Geriatrician (बुजुर्गों का डॉक्टर)",
+    "tips": "Resistance exercises and high-protein diet are crucial. (वेट ट्रेनिंग और प्रोटीन वाला खाना जरूरी है।)"
+  },
+  {
+    "keywords": ["knee swelling", "stiffness in morning", "osteoarthritis", "haddi ghisna"],
+    "conditions": "Osteoarthritis (जोड़ों का घिसना)",
+    "specialist": "Orthopedic Surgeon (हड्डियों का डॉक्टर)",
+    "tips": "Low-impact exercises like swimming. Maintain a healthy weight. (तैरने जैसी एक्सरसाइज करें और वजन घटाएं।)"
+  },
+  {
+    "keywords": ["confusion", "shaky hands", "beriberi", "vitamin b1"],
+    "conditions": "Beriberi (Vitamin B1 Deficiency) (बेरीबेरी)",
+    "specialist": "Nutritionist / Physician (पोषाहार विशेषज्ञ)",
+    "tips": "Increase intake of whole grains and legumes. (अनाज और दालें ज्यादा खाएं।)"
+  },
+  {
+    "keywords": ["skin peeling", "diarrhea", "dementia", "pellagra", "vitamin d3"],
+    "conditions": "Pellagra (Vitamin B3 Deficiency) (पेलाग्रा)",
+    "specialist": "Nutritionist / Dermatologist (त्वचा और आहार विशेषज्ञ)",
+    "tips": "Eat protein-rich foods like meat, fish, and nuts. (प्रोटीन वाला खाना जैसे मछली और नट्स खाएं।)"
+  },
+  {
+    "keywords": ["swelling in neck", "thyroid issues", "iodine deficiency", "ghoongha"],
+    "conditions": "Goiter (Iodine Deficiency) (घेंघा)",
+    "specialist": "Endocrinologist (थायराइड विशेषज्ञ)",
+    "tips": "Use iodized salt. Consume seafood and dairy. (आयोडाइज्ड नमक और दूध-दही का सेवन करें।)"
+  },
+  {
+    "keywords": ["leg swelling", "pain in calf", "phlebitis", "naso ki sujan"],
+    "conditions": "Phlebitis (नसों की सूजन)",
+    "specialist": "Vascular Surgeon (नसों का डॉक्टर)",
+    "tips": "Keep the leg elevated. Wear compression stockings. (पैर ऊपर रखें और फिटिंग वाली जुराबें पहनें।)"
+  },
+  {
+    "keywords": ["twisted veins", "dark blue veins", "varicose", "nili nase"],
+    "conditions": "Varicose Veins (वैरिकोज वेन्स)",
+    "specialist": "Vascular Surgeon (नसों का डॉक्टर)",
+    "tips": "Avoid standing for long periods. Regular walking helps. (ज्यादा देर तक खड़े न रहें। रोज टहलें।)"
+  },
+  {
+    "keywords": ["leg pain when walking", "pad", "numbness in legs"],
+    "conditions": "Peripheral Artery Disease (PAD) (धमनियों की बीमारी)",
+    "specialist": "Vascular Surgeon (नसों का डॉक्टर)",
+    "tips": "Quit smoking. Manage cholesterol and blood pressure levels. (धूम्रपान बंद करें और कोलेस्ट्रॉल कंट्रोल करें।)"
+  },
+  {
+    "keywords": ["choreic movements", "memory decline", "huntingtons"],
+    "conditions": "Huntington's Disease (हंटिंगटन रोग)",
+    "specialist": "Neurologist / Geneticist (जेनेटिक विशेषज्ञ)",
+    "tips": "Focus on palliative care and safety. Genetic testing for family is advised. (जेनेटिक चेकअप कराएं और सुरक्षा का ध्यान रखें।)"
+  },
+  {
+    "keywords": ["tremors", "steady hands", "essential tremor", "hath kanpna"],
+    "conditions": "Essential Tremor (हाथों का कांपना)",
+    "specialist": "Neurologist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Avoid caffeine and stress. Some medications can help control tremors. (चाय-कॉफी कम लें और तनाव से बचें।)"
+  },
+  {
+    "keywords": ["pain in bladder", "frequent urination", "cystitis", "peshab me dard"],
+    "conditions": "Cystitis (Bladder Infection) (सिस्टाइटिस / मूत्राशय सूजन)",
+    "specialist": "Urologist (मूत्र रोग विशेषज्ञ)",
+    "tips": "Drink significant water and avoid tight clothing. (खूब पानी पिएं और ढीले कपड़े पहनें।)"
+  },
+  {
+    "keywords": ["sudden memory loss", "confusion", "personality changes", "dementia", "bhoolna"],
+    "conditions": "Early-Onset Dementia (भूलने की बीमारी)",
+    "specialist": "Neurologist or Psychiatrist (तंत्रिका रोग विशेषज्ञ)",
+    "tips": "Establish a consistent routine and use memory aids. (निश्चित दिनचर्या बनाएं।)"
+  },
+  {
+    "keywords": ["severe eye pain", "vision loss", "halos in light", "acute glaucoma", "kala motia"],
+    "conditions": "Acute Angle-Closure Glaucoma (काला मोतिया - तत्काल)",
+    "specialist": "Ophthalmologist (Emergency) (आंखों का डॉक्टर - तत्काल)",
+    "tips": "Treat as a medical emergency to prevent permanent vision loss. (यह इमरजेंसी है, तुरंत डॉक्टर से मिलें।)"
+  },
+  {
+    "keywords": ["red eyes", "yellow discharge", "crusty eyelids", "conjunctivitis", "ankh ana"],
+    "conditions": "Conjunctivitis (Pink Eye) (आंख आना / कंजंक्टिवाइटिस)",
+    "specialist": "Ophthalmologist (आंखों का डॉक्टर)",
+    "tips": "Wash hands frequently and avoid sharing towels. (हाथ धोते रहें और तौलिया शेयर न करें।)"
+  },
+  {
+    "keywords": ["severe ear pain", "fever", "hearing loss", "otitis media", "kaan me sujan"],
+    "conditions": "Otitis Media (Ear Infection) (कान का संक्रमण)",
+    "specialist": "ENT Specialist (नाक-कान-गला विशेषज्ञ)",
+    "tips": "Keep the ear dry and follow the prescribed antibiotic course. (कान सूखा रखें और दवा पूरी लें।)"
+  },
+  {
+    "keywords": ["ringing in ears", "noise", "tinnitus", "kaan me ghanti"],
+    "conditions": "Tinnitus (कान में घंटी बजना)",
+    "specialist": "ENT Specialist (नाक-कान-गला विशेषज्ञ)",
+    "tips": "Avoid loud noises. White noise machines can help for sleeping. (तेज शोर से बचें और व्हाइट नॉइज़ का प्रयोग करें।)"
+  },
+  {
+    "keywords": ["spinning", "hearing loss", "menieres", "chakkar aur behrapan"],
+    "conditions": "Meniere's Disease (मेनिएर रोग)",
+    "specialist": "ENT Specialist (नाक-कान-गला विशेषज्ञ)",
+    "tips": "Limit salt intake. Avoid sudden head movements. (नमक कम खाएं और सिर झटके से न घुमाएं।)"
+  },
+  {
+    "keywords": ["night blindness", "dry eyes", "vitamin a deficiency", "ratondhi"],
+    "conditions": "Vitamin A Deficiency (Night Blindness) (रतौंधी)",
+    "specialist": "Ophthalmologist or Nutritionist (आंखों का डॉक्टर)",
+    "tips": "Increase intake of carrots, leafy greens, and fish. (गाजर, हरी सब्जियां और मछली खाएं।)"
+  },
+  {
+    "keywords": ["stomach pain", "burning", "nausea", "peptic ulcer", "pet ka ulcer"],
+    "conditions": "Peptic Ulcer (पेट का अलसर)",
+    "specialist": "Gastroenterologist (पेट का डॉक्टर)",
+    "tips": "Avoid spicy foods and NSAIDs like aspirin. Eat smaller, frequent meals. (मिर्च-मसाले से बचें और थोड़े-थोड़े अंतराल पर खाएं।)"
+  },
+  {
+    "keywords": ["abdominal pain", "bloating", "gluten", "celiac", "gehu se allergy"],
+    "conditions": "Celiac Disease (सिएलिक रोग / गेहूं से एलर्जी)",
+    "specialist": "Gastroenterologist (पेट का डॉक्टर)",
+    "tips": "Strict adherence to a gluten-free diet is essential. (ग्लूटेन-मुक्त आहार का सख्ती से पालन करें।)"
+  },
+  {
+    "keywords": ["yellow eyes", "fever", "back pain", "yellow fever", "peela bukhar"],
+    "conditions": "Yellow Fever (पीला बुखार)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Get vaccinated if traveling to endemic areas. Stay hydrated. (वैक्सीन लगवाएं और खूब पानी पिएं।)"
+  },
+  {
+    "keywords": ["blood in urine", "abdominal pain", "schistosomiasis", "pani ka kida"],
+    "conditions": "Schistosomiasis (शिस्टोसोमियासिस)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Avoid swimming in contaminated freshwater lakes or rivers. (गंदे पानी में नहाने से बचें।)"
+  },
+  {
+    "keywords": ["skin sores", "fever", "weight loss", "leishmaniasis", "kala azar"],
+    "conditions": "Leishmaniasis (Kala-azar) (कालाज़ार)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Insecticides and bed nets can help prevent sandfly bites. (मच्छरदानी का प्रयोग करें।)"
+  },
+  {
+    "keywords": ["shaking", "balance issues", "wilsons disease", "tambe ki bimari"],
+    "conditions": "Wilson's Disease (विल्सन रोग / तांबे का संचय)",
+    "specialist": "Hepatologist or Neurologist (लीवर या नस का डॉक्टर)",
+    "tips": "Focus on a low-copper diet and use prescribed medication to remove copper. (तांबा कम करने वाली दवाएं और आहार लें।)"
+  },
+  {
+    "keywords": ["joint bleeding", "bruising", "hemophilia", "khoon na rukna"],
+    "conditions": "Hemophilia (हीमोफीलिया)",
+    "specialist": "Hematologist (खून का डॉक्टर)",
+    "tips": "Avoid activities with high risk of injury. Carry a specialized medical ID. (चोट लगने वाली गतिविधियों से बचें।)"
+  },
+  {
+    "keywords": ["back pain", "dark skin patches", "addisons disease"],
+    "conditions": "Addison's Disease (एडिसन रोग)",
+    "specialist": "Endocrinologist (थायराइड विशेषज्ञ)",
+    "tips": "Carry emergency medical identification and medication as prescribed. (इमरजेंसी मेडिसिन साथ रखें।)"
+  },
+  {
+    "keywords": ["irregular periods", "acne", "hair growth", "pcos", "pcod"],
+    "conditions": "PCOS (Polycystic Ovary Syndrome) (पीसीओएस / पीसीओडी)",
+    "specialist": "Gynecologist or Endocrinologist (स्त्री रोग विशेषज्ञ)",
+    "tips": "Maintain a healthy lifestyle with regular exercise and a balanced diet. (नियमित कसरत और अच्छा खाना जरूरी है।)"
+  },
+  {
+    "keywords": ["severe abdominal pain", "jaundice", "gallstones", "pitte ki pathri"],
+    "conditions": "Gallstones (पित्त की पथरी)",
+    "specialist": "Gastroenterologist or General Surgeon (सर्जन)",
+    "tips": "Consume a low-fat diet. Surgical removal of the gallbladder is common. (कम वसा वाला खाना खाएं।)"
+  },
+  {
+    "keywords": ["severe headache", "stiff neck", "brain bleed", "aneurysm burst"],
+    "conditions": "Brain Aneurysm Rupture (दिमाग की नस का फटना)",
+    "specialist": "Neurosurgeon (Emergency) (दिमाग का सर्जन - तत्काल)",
+    "tips": "Call emergency services immediately. This is a critical medical emergency. (यह मेडिकल इमरजेंसी है, तुरंत अस्पताल जाएं।)"
+  },
+  {
+    "keywords": ["excessive hair", "weight gain", "purple stretch marks", "cushings"],
+    "conditions": "Cushing's Syndrome (कुशिंग सिंड्रोम)",
+    "specialist": "Endocrinologist (थायराइड विशेषज्ञ)",
+    "tips": "Monitor cortisol levels as directed by your specialist. (कोर्टिसोल लेवल की जांच कराएं।)"
+  },
+  {
+    "keywords": ["thickening skin", "joint pain", "scleroderma"],
+    "conditions": "Scleroderma (स्क्लेरोडर्मा / त्वचा का सख्त होना)",
+    "specialist": "Rheumatologist (गठिया विशेषज्ञ)",
+    "tips": "Protect skin from injury and keep warm. Physical therapy can help with mobility. (त्वचा को बचाएं और गर्म रखें।)"
+  },
+  {
+    "keywords": ["severe abdominal pain", "right side pain", "fever", "nausea", "appendicitis", "pet ke niche dard"],
+    "conditions": "Appendicitis (एपेंडिसाइटिस)",
+    "specialist": "General Surgeon (Emergency) (सर्जन - तत्काल)",
+    "tips": "Do not eat or drink anything. Seek immediate surgical evaluation. (कुछ भी न खाएं और तुरंत डॉक्टर के पास जाएं।)"
+  },
+  {
+    "keywords": ["foot itch", "peeling skin", "athletes foot", "pairon me khujli"],
+    "conditions": "Athlete's Foot (Tinea Pedis) (एथलीट फुट)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Keep feet dry and change socks regularly. Use antifungal cream. (पैर सूखे रखें और मोजे बदलें। एंटीफंगल क्रीम लगाएं।)"
+  },
+  {
+    "keywords": ["ring shaped rash", "itchy circle", "ringworm", "daadh"],
+    "conditions": "Ringworm (Tinea Corporis) (दाद)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Avoid sharing personal items like towels. Keep the affected area clean and dry. (तौलिया शेयर न करें और जगह को साफ रखें।)"
+  },
+  {
+    "keywords": ["white patches in mouth", "vaginal itching", "thrush", "candidiasis"],
+    "conditions": "Candidiasis (Yeast Infection) (खमीर संक्रमण / थ्रश)",
+    "specialist": "Gynecologist or General Physician",
+    "tips": "Maintain good hygiene. Probiotics and antifungal treatments can help. (साफ-सफाई का ध्यान रखें।)"
+  },
+  {
+    "keywords": ["numbness in hands", "tingling", "vitamin b12", "kamzori और sunn hona"],
+    "conditions": "Vitamin B12 Deficiency (विटामिन B12 की कमी)",
+    "specialist": "Hematologist or General Physician",
+    "tips": "Consume eggs, meat, or B12-fortified foods. B12 shots may be needed. (अंडे, मांस और विटामिन बी12 वाला खाना खाएं।)"
+  },
+  {
+    "keywords": ["shoulder pain", "restricted movement", "frozen shoulder", "kandhe me jakdan"],
+    "conditions": "Frozen Shoulder (Adhesive Capsulitis) (फ्रोजन शोल्डर / कंधे की जकड़न)",
+    "specialist": "Orthopedist or Physiotherapist (हड्डियों का डॉक्टर)",
+    "tips": "Gently stretch the shoulder. Physical therapy is often necessary for recovery. (हल्की स्ट्रेचिंग करें और फिजियोथेरेपी कराएं।)"
+  },
+  {
+    "keywords": ["elbow pain", "grip weakness", "tennis elbow", "kohni me dard"],
+    "conditions": "Tennis Elbow (Lateral Epicondylitis) (टेनिस एल्बो)",
+    "specialist": "Orthopedist / Physiotherapist",
+    "tips": "Rest the arm and avoid repetitive movements. Use a forearm brace if needed. (हाथ को आराम दें और फिजियोथेरेपी कराएं।)"
+  },
+  {
+    "keywords": ["heel pain in morning", "stabbing pain", "plantar fasciitis", "edi me dard"],
+    "conditions": "Plantar Fasciitis (एड़ी का दर्द)",
+    "specialist": "Orthopedist or Podiatrist",
+    "tips": "Do calf stretches and wear supportive shoes. Avoid walking barefoot. (एड़ी की स्ट्रेचिंग करें और अच्छे जूते पहनें।)"
+  },
+  {
+    "keywords": ["swollen knee", "elbow lump", "bursitis", "sujan"],
+    "conditions": "Bursitis (बर्साइटिस / जोड़ों में सूजन)",
+    "specialist": "Rheumatologist or Orthopedist",
+    "tips": "Protect the joint from pressure. Ice and rest can help reduce swelling. (जोड़ों पर दबाव न डालें और बर्फ की सिकाई करें।)"
+  },
+  {
+    "keywords": ["frequent night urination", "weak stream", "prostate enlargement", "bph", "peshab me kathinai"],
+    "conditions": "Benign Prostatic Hyperplasia (BPH) (प्रोस्टेट का बढ़ना)",
+    "specialist": "Urologist (मूत्र रोग विशेषज्ञ)",
+    "tips": "Limit fluids in the evening. Regular prostate checks are recommended for men over 50. (शाम को पानी कम पिएं और चेकअप कराते रहें।)"
+  },
+  {
+    "keywords": ["blood in cough", "chest pain", "fast heart rate", "pulmonary embolism", "saans lene me takleef"],
+    "conditions": "Pulmonary Embolism (फेफड़ों की नस में थक्का)",
+    "specialist": "Pulmonologist (Emergency) (फेफड़ों का डॉक्टर - तत्काल)",
+    "tips": "This is a life-threatening emergency. Seek immediate medical care. (यह जानलेवा इमरजेंसी है, तुरंत अस्पताल जाएं।)"
+  },
+  {
+    "keywords": ["chronic cough", "breathlessness", "smoking history", "copd", "purani khansi"],
+    "conditions": "COPD (Chronic Obstructive Pulmonary Disease) (सीओपीडी / फेफड़ों का रोग)",
+    "specialist": "Pulmonologist (फेफड़ों का डॉक्टर)",
+    "tips": "Quit smoking immediately. Use prescribed inhalers and consider pulmonary rehabilitation. (धूम्रपान छोड़ें और इनहेलर का प्रयोग करें।)"
+  },
+  {
+    "keywords": ["shortness of breath", "barrel chest", "weight loss", "emphysema", "saans phoolna"],
+    "conditions": "Emphysema (एम्फिसीमा / फेफड़ों की सूजन)",
+    "specialist": "Pulmonologist (फेफड़ों का डॉक्टर)",
+    "tips": "Avoid air pollutants. Supplemental oxygen may be required in advanced stages. (प्रदूषण से बचें और ऑक्सीजन की जांच कराएं।)"
+  },
+  {
+    "keywords": ["fever", "heart murmur", "fatigue", "endocarditis", "dil ki sujan"],
+    "conditions": "Infectious Endocarditis (दिल के वाल्व का संक्रमण)",
+    "specialist": "Cardiologist or Infectious Disease Specialist (हृदय रोग विशेषज्ञ)",
+    "tips": "Requires intravenous antibiotics. Maintain excellent dental hygiene to prevent recurrence. (एंटीबायोटिक का पूरा कोर्स लें और दांतों की सफाई रखें।)"
+  },
+  {
+    "keywords": ["sharp chest pain", "pain better leaning forward", "pericarditis", "seene me tez dard"],
+    "conditions": "Pericarditis (दिल की झिल्ली में सूजन)",
+    "specialist": "Cardiologist (हृदय रोग विशेषज्ञ)",
+    "tips": "Anti-inflammatory medications can help. Rest and avoid strenuous exercise. (सूजन कम करने वाली दवाएं लें और आराम करें।)"
+  },
+  {
+    "keywords": ["swollen abdomen", "protein deficiency", "thin limbs", "kwashiorkor", "kuposhan"],
+    "conditions": "Kwashiorkor (Protein-Energy Malnutrition) (क्वाशियोरकोर / कुपोषण)",
+    "specialist": "Pediatrician or Nutritionist (पोषाहार विशेषज्ञ)",
+    "tips": "Gradually increase protein and calorie intake under medical supervision. (धीरे-धीरे प्रोटीन और कैलोरी बढ़ाएं।)"
+  },
+  {
+    "keywords": ["wasting body", "extremely thin", "marasmus", "bohot kamzori"],
+    "conditions": "Marasmus (Severe Malnutrition) (मैरास्मस / गंभीर कुपोषण)",
+    "specialist": "Pediatrician or Nutritionist (पोषाहार विशेषज्ञ)",
+    "tips": "Requires urgent nutritional rehabilitation and treatment for underlying infections. (पोषाहार और इलाज की तुरंत जरूरत है।)"
+  },
+  {
+    "keywords": ["joint pain", "morning stiffness", "psoriatic arthritis", "gathiya"],
+    "conditions": "Psoriatic Arthritis (सोरायसिस और गठिया)",
+    "specialist": "Rheumatologist or Dermatologist (गठिया विशेषज्ञ)",
+    "tips": "Early treatment can prevent joint damage. Stay active with low-impact exercises. (जल्द इलाज कराएं और हल्की एक्सरसाइज करें।)"
+  },
+  {
+    "keywords": ["dry eyes", "dry mouth", "joint pain", "sjogrens", "muh sukhna"],
+    "conditions": "Sjögren's Syndrome (सजोग्रेन सिंड्रोम)",
+    "specialist": "Rheumatologist (गठिया विशेषज्ञ)",
+    "tips": "Use artificial tears and saliva substitutes. Stay hydrated and avoid dry environments. (आंखों में ड्राप डालें और खूब पानी पिएं।)"
+  },
+  {
+    "keywords": ["cold fingers", "blue tips", "numbness", "raynauds", "ungliyan nili hona"],
+    "conditions": "Raynaud's Phenomenon (रेनॉड की बीमारी)",
+    "specialist": "Rheumatologist or Vascular Specialist (गठिया विशेषज्ञ)",
+    "tips": "Keep hands and feet warm. Avoid sudden temperature changes and smoking. (हाथ-पैर गर्म रखें और ठंड से बचें।)"
+  },
+  {
+    "keywords": ["muscle pain", "difficulty climbing stairs", "polymyositis", "maspeshi dard"],
+    "conditions": "Polymyositis (मांसपेशियों की सूजन)",
+    "specialist": "Rheumatologist (गठिया विशेषज्ञ)",
+    "tips": "Physical therapy can help maintain muscle strength and flexibility. (फिजियोथेरेपी से मांसपेशियों की ताकत बनी रहेगी।)"
+  },
+  {
+    "keywords": ["high fever", "bleeding", "severe weakness", "ebola", "khoon nikalna"],
+    "conditions": "Ebola Virus Disease (इबोला)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Strict isolation and supportive care are essential. This is a severe global health threat. (आइसोलेशन और कड़ी निगरानी जरूरी है।)"
+  },
+  {
+    "keywords": ["skin ulcer", "black scab", "shortness of breath", "anthrax"],
+    "conditions": "Anthrax (ऐंथ्रैक्स)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Requires immediate antibiotic treatment. Avoid contact with infected animals. (तुरंत एंटीबायोटिक लें और बीमार जानवरों से बचें।)"
+  },
+  {
+    "keywords": ["sudden fever", "swollen lymph nodes", "plague", "gilti bal"],
+    "conditions": "Plague (प्लेग)",
+    "specialist": "Infectious Disease Specialist (संक्रामक रोग विशेषज्ञ)",
+    "tips": "Seek medical help immediately. Avoid contact with rodents and fleas. (तुरंत डॉक्टर से मिलें और चूहे-पिस्सू से बचें।)"
+  },
+  {
+    "keywords": ["dark patches on skin", "hormonal changes", "melasma", "chaiyan"],
+    "conditions": "Melasma (मेलाज्मा / छाइयां)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Always use sun protection. Topical treatments can help lighten the patches. (सनस्क्रीन लगाएं और डॉक्टर की बताई क्रीम लगाएं।)"
+  },
+  {
+    "keywords": ["white patches", "loss of pigment", "vitiligo", "safed daag"],
+    "conditions": "Vitiligo (सफेद दाग / विटिलिगो)",
+    "specialist": "Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Protect the white patches from sun damage. Various treatments can help restore color. (सनबर्न से बचें और रंगों को वापस लाने का इलाज करें।)"
+  },
+  {
+    "keywords": ["itchy welts", "swelling", "hives", "urticaria", "pitti uchalna"],
+    "conditions": "Urticaria (Hives) (पित्ती उछलना)",
+    "specialist": "Allergist or Dermatologist (त्वचा विशेषज्ञ)",
+    "tips": "Identify and avoid triggers like certain foods or medications. Antihistamines offer relief. (एलर्जी वाली चीज़ों से बचें और दवाई लें।)"
+  },
+  {
+    "keywords": ["severe sore throat", "abdominal pain", "extreme fatigue", "mononucleosis", "chumban rog"],
+    "conditions": "Mononucleosis (Glandular Fever) (चुंबन रोग / मोनोन्यूक्लिओसिस)",
+    "specialist": "General Physician (सामान्य चिकित्सक)",
+    "tips": "Rest and hydration are vital. Avoid strenuous sports to prevent spleen rupture. (खूब आराम करें और कसरत न करें।)"
+  }
+]
