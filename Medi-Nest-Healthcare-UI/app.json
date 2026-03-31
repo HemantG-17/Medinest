@@ -7,7 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "medinesthealthcare",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": false,
+    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
@@ -23,8 +23,18 @@
       "package": "com.medinest.healthcare.app"
     },
     "web": {
+      "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "pwa": {
+        "name": "Medi-Nest Healthcare",
+        "shortName": "MediNest",
+        "description": "Premium healthcare platform for patients and doctors.",
+        "themeColor": "#0eb5b5",
+        "backgroundColor": "#ffffff",
+        "display": "standalone",
+        "orientation": "portrait"
+      }
     },
     "plugins": [
       "expo-router",

@@ -28,7 +28,7 @@ exports.register = async (req, res) => {
       email,
       password: hashedPassword,
       role,
-      phone: role === "doctor" ? phone : undefined,
+      phone,
       specialization: role === "doctor" ? specialization : "",
       clinicName: role === "doctor" ? clinicName : "",
       clinicAddress: role === "doctor" ? clinicAddress : "",

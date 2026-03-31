@@ -38,9 +38,7 @@ const userSchema = new mongoose.Schema(
 
     phone: {
       type: String,
-      required: function () {
-        return this.role === "doctor";
-      },
+      required: false,
     },
 
     profilePic: {

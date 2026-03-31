@@ -5,6 +5,7 @@ const Appointment = require("../models/Appointment");
 const User = require("../models/User");
 const { protect } = require("../middleware/auth.middleware");
 const { sendEmail, appointmentConfirmedEmail, consultationCompletedEmail } = require("../config/email");
+const { sendWhatsApp } = require("../utils/whatsapp");
 
 // 🔥 HELPER: Get Current IST Date/Time
 const getIST = () => {
@@ -168,6 +169,19 @@ router.patch("/:id/cancel", protect, async (req, res) => {
 
     await appointment.save();
 
+    // 📱 WhatsApp Notification
+    try {
+      const populated = await Appointment.findById(appointment._id).populate("patientId", "name phone");
+      if (populated?.patientId?.phone) {
+        await sendWhatsApp(
+          populated.patientId.phone,
+          `Hi ${populated.patientId.name}, your appointment on ${appointment.date} at ${appointment.time} has been CANCELLED as requested.`
+        );
+      }
+    } catch (waErr) {
+      console.error("Cancel WhatsApp error:", waErr.message);
+    }
+
     res.json({ message: "Appointment cancelled", appointment });
   } catch (err) {
     console.error(err);
@@ -273,6 +287,22 @@ router.patch("/:id/approve", protect, async (req, res) => {
     }
 
     res.json({ message: "Approved", appointment });
+
+    // 📱 WhatsApp Notification
+    try {
+      const populated = await Appointment.findById(appointment._id)
+        .populate("patientId", "name phone")
+        .populate("doctorId", "name");
+      
+      if (populated?.patientId?.phone) {
+        await sendWhatsApp(
+          populated.patientId.phone,
+          `Hi ${populated.patientId.name}, your appointment with Dr. ${populated.doctorId?.name} is CONFIRMED for ${appointment.date} at ${appointment.time}.\n\n🔑 YOUR OTP: ${appointment.otp}\n\nPlease share this OTP with the doctor during your visit.`
+        );
+      }
+    } catch (waErr) {
+      console.error("Approve WhatsApp error:", waErr.message);
+    }
   } catch (err) {
     res.status(500).json({ message: "Error approving" });
   }
@@ -311,6 +341,19 @@ router.patch("/:id/reject", protect, async (req, res) => {
     await appointment.save();
 
     res.json({ message: "Rejected", appointment });
+
+    // 📱 WhatsApp Notification
+    try {
+      const populated = await Appointment.findById(appointment._id).populate("patientId", "name phone");
+      if (populated?.patientId?.phone) {
+        await sendWhatsApp(
+          populated.patientId.phone,
+          `Hi ${populated.patientId.name}, we're sorry but your appointment for ${appointment.date} has been REJECTED. Any payment made will be refunded shortly. Reason: ${rejectionReason || "Clinic busy"}.`
+        );
+      }
+    } catch (waErr) {
+      console.error("Reject WhatsApp error:", waErr.message);
+    }
   } catch (err) {
     res.status(500).json({ message: "Error rejecting" });
   }
@@ -360,6 +403,22 @@ router.patch("/:id/verify-otp", protect, async (req, res) => {
     }
 
     res.json({ message: "OTP Verified, Visit Completed", appointment });
+
+    // 📱 WhatsApp Notification
+    try {
+      const populated = await Appointment.findById(appointment._id)
+        .populate("patientId", "name phone")
+        .populate("doctorId", "name");
+      
+      if (populated?.patientId?.phone) {
+        await sendWhatsApp(
+          populated.patientId.phone,
+          `Thank you for visiting Dr. ${populated.doctorId?.name}! Your consultation is now complete. We hope you feel better soon! ✨\n\nPlease log in to Medi-Nest to share your feedback and review your doctor.`
+        );
+      }
+    } catch (waErr) {
+      console.error("Complete WhatsApp error:", waErr.message);
+    }
   } catch(err) {
     res.status(500).json({ message: "Error verifying OTP" });
   }
