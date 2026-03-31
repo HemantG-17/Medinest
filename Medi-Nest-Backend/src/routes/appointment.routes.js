@@ -253,6 +253,7 @@ router.patch("/:id/approve", protect, async (req, res) => {
 
     // 📧 Email patient with confirmation + OTP
     const otp = appointment.otp;
+    try {
       const populated = await Appointment.findById(appointment._id)
         .populate("patientId", "name email")
         .populate("doctorId", "name");
