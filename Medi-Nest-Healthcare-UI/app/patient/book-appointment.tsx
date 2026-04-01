@@ -25,15 +25,18 @@ export default function BookAppointment() {
   const [date, setDate] = useState(new Date());
   const [showPicker, setShowPicker] = useState(false);
 
-  const [slots, setSlots] = useState<string[]>([]);
+  const [slots, setSlots] = useState<{ time: string; isAvailable: boolean }[]>([]);
   const [selected, setSelected] = useState("");
 
   const [loadingSlots, setLoadingSlots] = useState(false);
   const [booking, setBooking] = useState(false);
 
-  const allSlots = ["10:00 AM", "11:00 AM", "12:00 PM", "5:00 PM"];
-
-  const formatDate = (d: Date) => d.toDateString();
+  const formatDate = (d: Date) => {
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  };
 
   const fetchSlots = async () => {
     try {
@@ -154,19 +157,19 @@ export default function BookAppointment() {
             gap: 10,
           }}
         >
-          {allSlots.map((slot) => {
-            const isAvailable = slots.includes(slot);
+          {slots.map((slot) => {
+            const isAvailable = slot.isAvailable;
 
             return (
               <TouchableOpacity
-                key={slot}
+                key={slot.time}
                 disabled={!isAvailable}
-                onPress={() => setSelected(slot)}
+                onPress={() => setSelected(slot.time)}
                 style={{
                   padding: 10,
                   backgroundColor: !isAvailable
                     ? "#ccc"
-                    : selected === slot
+                    : selected === slot.time
                     ? "#2563eb"
                     : "#e5e7eb",
                   borderRadius: 8,
@@ -176,12 +179,12 @@ export default function BookAppointment() {
                   style={{
                     color: !isAvailable
                       ? "#666"
-                      : selected === slot
+                      : selected === slot.time
                       ? "#fff"
                       : "#000",
                   }}
                 >
-                  {slot}
+                  {slot.time}
                 </Text>
               </TouchableOpacity>
             );

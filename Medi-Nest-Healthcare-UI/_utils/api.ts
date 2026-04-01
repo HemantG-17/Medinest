@@ -63,6 +63,24 @@ export const getSlots = async (doctorId: string, date: string) => {
   return authFetch(`${API_URL}/appointments/slots?doctorId=${doctorId}&date=${date}`);
 };
 
+export const getAvailableSlots = async (doctorId: string, date: string) => {
+  return authFetch(
+    `${API_URL}/appointments/slots?doctorId=${doctorId}&date=${date}`
+  );
+};
+
+export const bookAppointment = async (
+  doctorId: string,
+  date: string,
+  time: string,
+  paymentDetails: any
+) => {
+  return authFetch(`${API_URL}/appointments`, {
+    method: "POST",
+    body: JSON.stringify({ doctorId, date, time, paymentDetails }),
+  });
+};
+
 export const approveAppointment = async (id: string) => {
   return authFetch(`${API_URL}/appointments/${id}/approve`, {
     method: "PATCH",
@@ -80,6 +98,22 @@ export const verifyOtp = async (id: string, otp: string) => {
   return authFetch(`${API_URL}/appointments/${id}/verify-otp`, {
     method: "PATCH",
     body: JSON.stringify({ otp }),
+  });
+};
+
+/**
+ * PAYMENT
+ */
+export const createOrder = async () => {
+  return authFetch(`${API_URL}/payment/create-order`, {
+    method: "POST",
+  });
+};
+
+export const verifyPayment = async (data: any) => {
+  return authFetch(`${API_URL}/payment/verify`, {
+    method: "POST",
+    body: JSON.stringify(data),
   });
 };
 

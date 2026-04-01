@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { isValidEmail, isValidPassword } from "../_utils/validation";
 import { loginUser, Role } from "../_utils/auth";
 import { saveAuth } from "../_utils/storage";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const ROLE_DASHBOARD_MAP = {
   patient: "/(tabs)/home",
@@ -36,6 +37,11 @@ export default function Login() {
       }
 
       await saveAuth(data.token, data.user);
+
+      // Persist name and profilePic for quick access on home screen
+      if (data.user.name) await AsyncStorage.setItem("name", data.user.name);
+      if (data.user.profilePic) await AsyncStorage.setItem("profilePic", data.user.profilePic);
+
       const dashboardRoute = ROLE_DASHBOARD_MAP[data.user.role as keyof typeof ROLE_DASHBOARD_MAP];
       router.replace(dashboardRoute);
     } catch (err: any) {
@@ -57,7 +63,7 @@ export default function Login() {
         <View style={styles.card}>
           <View style={styles.logoContainer}>
             <Image 
-              source={require("../assets/images/logo-premium.png")} 
+              source={require("../assets/images/logo_premium.png")} 
               style={styles.logo}
               resizeMode="contain"
             />

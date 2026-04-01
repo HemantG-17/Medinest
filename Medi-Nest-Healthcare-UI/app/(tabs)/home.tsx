@@ -138,7 +138,7 @@ export default function PatientDashboard() {
         <View style={styles.header}>
           <View style={styles.headerTitleRow}>
             <Image 
-              source={require("../../assets/images/logo-premium.png")} 
+              source={require("../../assets/images/logo_premium.png")} 
               style={styles.logoMini} 
             />
             <View>
